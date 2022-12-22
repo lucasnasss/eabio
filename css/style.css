@@ -91,12 +91,12 @@ body {
 }
 
 .arrow a{
-    color: rgb(28, 0, 187);
+    color: rgb(255, 188, 4);;
 font-size: 40px;
 font-weight:900;
 }
 .arrow a:hover{
-    color: rgb(255, 188, 4);
+    color: rgb(28, 0, 187);
     }
 
 .header h1{
@@ -230,6 +230,10 @@ font-weight:900;
 .items i{ 
     font-size: 70px;
 }
+
+.items span{ 
+    font-size: 70px;
+}
 .items p{
     font-size: 20px;
     margin-top: 8px;
@@ -338,7 +342,8 @@ font-weight:900;
 .contato{
     grid-area:contato ;
     width: 100%;
-    height:500px;
+    min-height:350px;
+    height:100%;
     display: flex;
     flex-direction: column;
     background-color:slateblue;
@@ -352,6 +357,7 @@ font-weight:900;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .contato-title h2{
@@ -432,6 +438,8 @@ font-weight:900;
     margin-left: 15px;
 }
 
+
+
 .footer{
     grid-area: footer;
     display: flex;
@@ -460,7 +468,7 @@ font-weight:900;
 .footer-button {
     display: flex;
     width: 100%;
-    justify-content:space-between;
+    justify-content:center;
     margin-top: 50px;
     align-items: center;
 }
@@ -487,4 +495,38 @@ font-weight:900;
     width: 100%;
     background-color: rgb(255, 188, 4);
     padding: 15px 0 15px;
+}
+
+
+
+.contact-form{
+
+    width: 100%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contact-form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+ input {
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.fadeInUp {
+    display: flex;
+    justify-content: center;
+}
+.fadeInUp button{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    
 }
