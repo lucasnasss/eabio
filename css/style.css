@@ -212,29 +212,26 @@ font-weight:900;
     color: black;
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 30px 0 30px;
     
 }
-.items{
+.itens{
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
-.items:hover{
+.itens:hover{
     color: rgb(255, 255, 255);
     
 }
-.items i{ 
-    font-size: 70px;
-}
 
-.items span{ 
+.itens span{ 
     font-size: 70px;
 }
-.items p{
+.itens p{
     font-size: 20px;
     margin-top: 8px;
 }
