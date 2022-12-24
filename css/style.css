@@ -41,11 +41,6 @@ body {
     justify-content: center;
 }
 
-.title ::selection {
-    background: rgb(255, 188, 4);
-    color:rgb(255, 255, 255);
-}
-
 .img-wrapper {
     width: 100%;
     height: 100%;
@@ -66,12 +61,6 @@ body {
     justify-content: space-around;
     align-items: center;
 
-    
-}
-
-.post-title {
-    position: relative;
-    display: flex;
     
 }
 
@@ -98,11 +87,6 @@ font-weight:900;
 .arrow a:hover{
     color: rgb(28, 0, 187);
     }
-
-.header h1{
-    color: #eee;
-    font-size: 50px;
-}
 
 .redes{
     width: 50%;
@@ -265,77 +249,6 @@ font-weight:900;
     
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 10px;
-    width: 100%;
-    color: rgb(253, 253, 253);
-
-}
-
-.card {
-    background-color: rgb(0, 0, 0);
-    border: 5 solid rgb(255, 188, 4);
-    height: 225px;
-    padding: 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly
-}
-
-.card-bg  {
-    width: 100%;
-    height: 100%;
-
-}
-.card-bg img{ 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.4;
-}
-.card-info {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-}
-.card-info a {
-    text-decoration: none;
-    color: rgb(250, 250, 250);
-}
-.card-info a:hover {
-    text-decoration: none;
-    color: rgb(255, 188, 4);
-}
-.card-info h3{
-    margin-bottom: 20px;
-}
-.card p {
-    text-align: center;
-    max-width: 80%;
-    margin-bottom: 20px;
-}
-.card span{
-    font-size: 12px;
-}
-.projetos-bottom {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-
-}
-.projetos-bottom a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-.projetos-bottom a:hover {
-    color: rgb(255, 188, 4);
-}
-
 .contato{
     grid-area:contato ;
     width: 100%;
@@ -359,7 +272,6 @@ font-weight:900;
 
 .contato-title h2{
     font-size: 50px;
-    margin:0px 0 20px;
 
 }
 .alingn-contato {
@@ -373,66 +285,6 @@ font-weight:900;
 .alingn-contato ::selection {
     background: rgb(255, 188, 4);
     color:rgb(255, 255, 255);
-}
-.contato-cards {
-    width: 100%;
-    height: 200px;
-    max-width: 30%;
-    min-width: 300px;
-    display: flex;
-}
-
-.contato-card-left {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255, 0.2);
-    width: 100%;
-    height: 100%;
-    margin: 5px 5px;
-}
-
-.contato-iframe {
-    width: 100%;
-    height: 100%;
-
-}
-.contato-iframe iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.2;
-}
-
-.contato-box-info{
-    display: flex;
-    flex-direction: column; 
-    position: relative;
-    width: 100%;
-    height: 100%;
-    
-}
-.box-contato {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contato-info {
-    width: 100%;
-    display: flex;
-    
-}
-
-.contato-info i{
-    margin-left: 15px;
-}
-
-.contato-info p{
-    margin-left: 15px;
 }
 
 
@@ -477,10 +329,6 @@ font-weight:900;
 }
 .footer-button button i{
     margin-right: 10px;
-}
-.whats {
-    background-color: rgb(52, 175, 35);
-    border: none;
 }
 .telegram {
     background-color: rgb(0, 136, 204);
@@ -527,3 +375,57 @@ font-weight:900;
     font-size: 15px;
     
 }
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .book {
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .book img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .book h3 {
+    margin: 0;
+    color: #6a1b9a;
+    text-align: center;
+  }
+  .book p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #6a1b9a;
+    text-align: center;
+  }
+  .book button {
+    background-color: #6a1b9a;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .book button:hover {
+    background-color: #4b0082;
+  }
